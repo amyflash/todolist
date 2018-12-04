@@ -8,11 +8,12 @@
 <?php if(Config::get('rtl')): ?>
 <link rel="stylesheet" type="text/css" href="<?php mttinfo('template_url'); ?>style_rtl.css?v=1.4.3" media="all" />
 <?php endif; ?>
-
+<?php if(isset($_GET['pda'])): ?>
 <meta name="viewport" id="viewport" content="width=device-width" />
 <link rel="stylesheet" type="text/css" href="<?php mttinfo('template_url'); ?>pda.css?v=1.4.3" media="all" />
-
-
+<?php else: ?>
+<link rel="stylesheet" type="text/css" href="<?php mttinfo('template_url'); ?>print.css?v=1.4.3" media="print" />
+<?php endif; ?>
 </head>
 
 <body>
@@ -27,14 +28,14 @@
 <script type="text/javascript">
 $().ready(function(){
 
-	
+	<?php if(isset($_GET['pda'])): ?>
 
 	$('body').width(screen.width);
 	$(window).resize(function() {
 		$('body').width(screen.width);
 	});
 		
-	
+	<?php endif; ?>
 
 	mytinytodo.mttUrl = "<?php mttinfo('mtt_url'); ?>";
 	mytinytodo.templateUrl = "<?php mttinfo('template_url'); ?>";
