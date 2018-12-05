@@ -80,7 +80,7 @@ class Database_Mysql
 
 	function last_insert_id()
 	{
-		return mysql_insert_id($this->dbh);
+		return mysqli_insert_id($this->dbh);
 	}	
 	
 	function error()
@@ -146,7 +146,7 @@ class Database_Mysql
 
 	function affected()
 	{
-		return	mysql_affected_rows($this->dbh);
+		return	mysqli_affected_rows($this->dbh);
 	}
 
 	function quote($s)
