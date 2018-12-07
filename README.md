@@ -1,9 +1,10 @@
-# todolist
+# todolist is based on mytinytodolist project
 todolist  support php7+
 
 How to install:
 
-1. create 4 tables in your database:
+## 1. create 4 tables in your database:
+```sql
 CREATE TABLE `mtt_lists` (
   `id` int(10) UNSIGNED NOT NULL,
   `uuid` char(36) NOT NULL DEFAULT '',
@@ -76,8 +77,9 @@ ALTER TABLE `mtt_tag2task`
   ADD KEY `task_id` (`task_id`),
   ADD KEY `list_id` (`list_id`);
 COMMIT;
+```
 
-2. visit http://yourhost/index.php
+## 2. visit your host/index.php
 
 ps:makesure tmp could be written
 chmod 777 tmp
