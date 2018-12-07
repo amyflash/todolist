@@ -2,7 +2,7 @@
 $config = array();
 $config['db'] = 'mysql';
 $config['mysql.host'] = 'localhost';
-$config['mysql.db'] = 'wpblog';
+$config['mysql.db'] = 'your database name';
 $config['mysql.user'] = 'root';
 $config['mysql.password'] = 'your pwd';
 $config['prefix'] = 'mtt_';
