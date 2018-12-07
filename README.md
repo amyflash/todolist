@@ -1,4 +1,4 @@
-# todolist is based on mytinytodolist project
+# todolist is based on http://www.mytinytodo.net/
 todolist  support php7+
 
 How to install:
