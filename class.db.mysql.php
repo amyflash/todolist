@@ -69,7 +69,7 @@ class Database_Mysql
 	{
 		if(!$this->dbh = @mysqli_connect($host,$user,$pass,$db))
 		{
-			throw new Exception(mysql_error());
+			throw new Exception(mysqli_error());
 		}
 		if( @!mysqli_select_db($this->dbh,$db) )
 		{
@@ -85,7 +85,7 @@ class Database_Mysql
 	
 	function error()
 	{
-		return mysql_error($this->dbh);
+		return mysqli_error($this->dbh);
 	}
 
 	function sq($query, $p = NULL)
