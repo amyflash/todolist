@@ -1,5 +1,5 @@
-# todolist is based on http://www.mytinytodo.net/
-todolist  support php7+
+# todolist is based on http://www.mytinytodo.net/ (pity for only support php5.6-)
+I modify some code to let it support php7+
 
 How to install:
 
